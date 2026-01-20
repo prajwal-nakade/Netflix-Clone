@@ -1,0 +1,5 @@
+- [ ] Fix typos in Footer.jsx: "Inventor Relation" to "Investor Relations", "@" to "©"
+- [ ] Update classNames: Change "w" to "w-full", add padding, margins, responsive classes
+- [ ] Style icons: Add consistent cursor-pointer, hover effects (opacity), proper alt texts
+- [ ] Organize links into grid (4 columns on large screens), add hover effects (underline), make clickable with href="#"
+- [ ] Style copyright text for better readability
