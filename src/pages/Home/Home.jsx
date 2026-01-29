@@ -40,10 +40,11 @@ const Home = () => {
         </div>
       </div>
       <div className="pl-20">
-        <TitleCards title={"Blockbuster Movie"}/>
-        <TitleCards title={"Popular on Netflix"}/>
-        <TitleCards title={"New Releases"}/>
-        <TitleCards title={"Trending Now"}/>
+        
+        <TitleCards title={"Top Rated"} category={"top_rated"}/>
+        <TitleCards title={"Popular on Netflix"} category={"popular"}/>
+        <TitleCards title={"Upcoming"} category={"upcoming"}/>
+        <TitleCards title={"Now Playing"} category={"now_playing"}/>
       </div>
       <Footer/>
     </div>

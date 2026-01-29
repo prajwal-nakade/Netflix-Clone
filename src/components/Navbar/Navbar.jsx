@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="w-full px-20 py-6 flex justify-between fixed top-0 z-50 ">
       <div className="flex text-[14px]  items-center gap-5">
-        <img className="w-50" src={logo} alt="" />
+        <img className="w-30" src={logo} alt="" />
         <ul className="flex gap-4 ">
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">TV Shows</li>

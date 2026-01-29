@@ -6,8 +6,9 @@ import facebook_icon from "../../assets/facebook_icon.png";
 
 const Footer = () => {
   return (
-    <div className="px-6 py-8 mx-auto w-full max-w-6xl">
-      <div className="flex gap-4 mb-6">
+    <>
+    <div className="px-12 ml-60 py-8 mx-auto w-full max-w-6xl">
+      <div className="flex gap-4 mb-6 items-center justify-center">
         <img
           src={facebook_icon}
           alt="Facebook"
@@ -85,9 +86,18 @@ const Footer = () => {
             Contact Us
           </a>
         </li>
+        <li> 
+          <a href="#" className="hover:underline">
+            Support
+          </a>
+        </li>
       </ul>
-      <p className="text-sm text-gray-400">© 1997-2023 Netflix, Inc.</p>
+      <div className=" w-full mx-auto text-center  ">
+        <p className="text-sm text-gray-400 ">© 1997-2023 Netflix, Inc.</p>
+      </div>
     </div>
+    
+    </>
   );
 };
 
