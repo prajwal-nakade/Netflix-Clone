@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Cards_data from "../../assets/cards/Cards_data.js";
+import {Link} from 'react-router-dom';
 
 const TitleCards = ({ title, category }) => {
   const cardsRef = useRef(null);
@@ -42,7 +43,7 @@ const TitleCards = ({ title, category }) => {
 
       <div className="flex gap-3 overflow-x-auto scrollbar-hide" ref={cardsRef}>
         {nowPlayingMovieData.map((card, index) => (
-          <div key={index} className="relative shrink-0 w-45">
+          <Link to={`/player/${card.id}`} key={index} className="relative shrink-0 w-45">
             <img
               src={`https://image.tmdb.org/t/p/w500${card.backdrop_path}`}
               alt={card.name}
@@ -51,7 +52,7 @@ const TitleCards = ({ title, category }) => {
             <p className="absolute bottom-1 right-1 text-xs bg-black/70 px-1 rounded">
               {card.original_title}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
