@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import { logout } from "../../firebase";
 import logo from "../../assets/logo.png";
 import search_icon from "../../assets/search_icon.svg";
 import bell_icon from "../../assets/bell_icon.svg";
@@ -41,7 +41,7 @@ const Navbar = () => {
           <img src={profile_img} alt="" className="rounded-sm w-9" />
           <img src={caret_icon} alt="" />
           <div className="absolute top-10 right-0 z-50 w-max px-4 py-3 underline bg-[#191919] opacity-0 group-hover:opacity-100 transition-opacity ">
-            <p className="text-sm cursor-pointer">sign out of netflix</p>
+            <p onClick={()=>{logout()}} className="text-sm cursor-pointer">sign out of netflix</p>
           </div>
         </div>
       </div>
